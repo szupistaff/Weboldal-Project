@@ -1,0 +1,18 @@
+:root{
+    --color0: rgb(255, 255, 255);
+    --color1: rgb(230, 205, 180);
+    --color2: rgb(180, 160, 150);
+    --color3: rgb(90, 80, 75);
+    --color4: rgb(214, 253, 205);
+
+    --font-l: clamp(1rem, 4vw, 4rem);
+    --font-m: clamp(0.9rem, 2vw, 2rem);
+    --font-s: clamp(0.75rem, 2vw, 1.5rem);
+    --font-xs: clamp(0.25rem, 1vw, 1rem);
+}
+
+main{
+    height: max-content;
+    width: 100%;
+    background-color: var(--color2);
+}
