@@ -11,7 +11,56 @@
     --font-xs: clamp(0.25rem, 1vw, 1rem);
 }
 
+
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 main{
     height: 100%;
     background-color: var(--color1);
+}
+
+.container-fluid > .row{
+    justify-content: space-evenly;
+    > .row{
+        margin-block: 1rem !important;
+    }
+}
+
+
+#kutya{
+
+    background-color: var(--color0);
+    display: flex;
+    flex-wrap: nowrap;
+    border: var(--color2) solid 0.5em;
+    border-radius: 2%;
+    margin: 1em !important;
+    width: 200em;
+    overflow: scroll;
+
+    div{
+        background-color: var(--color3);
+        width: 100em;
+
+        img{
+            width: 100%;
+            border-right: var(--color2) solid 0.1rem;
+            border-bottom: var(--color2) solid 0.1rem;
+        }
+
+        h3{
+            font-family: cursive, monospace;
+            color: var(--color1);
+            text-align: center;
+            font-weight: bold;
+            font-size: var(--font-l);
+            padding: 1rem !important;
+            width: 100%;
+        }
+
+    }
+
 }
