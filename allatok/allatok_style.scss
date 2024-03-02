@@ -24,13 +24,41 @@ main{
 
 .container-fluid > .row{
     justify-content: space-evenly;
-    > .row{
+    > div, input{
         margin-block: 1rem !important;
+        height: 30dvh;
+        max-height: 90dvh;
     }
 }
 
 
 #kutya{
     
+    /* flex: 0 0 90%;*/
+    max-width: 100%;
+    border: var(--color2) solid 0.5em;
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+    background-color: var(--color3);
+    
+}
+
+.g{
+    position: absolute;
+    left: 41vw;
+    height: 30vh;
+    width: 2%;
+    background-color: var(--color2);
+    display: flex;
+    align-items: center;
+    appearance: none;
+    border-block: 15vh solid transparent;
+    border-left: var(--color0) solid 1.8vw;
+    cursor: pointer;
+
+    &:checked ~ #kutya{
+        flex: 0 0 90%;
+        height: 40dvh;
+    }
 
 }
