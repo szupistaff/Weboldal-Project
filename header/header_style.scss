@@ -27,23 +27,16 @@ img{
 }
 
 ::-webkit-scrollbar{
-    width: 1.4vw;
+    width: 1vw;
     background-color: var(--color1);
 }
 
 ::-webkit-scrollbar-track{
     background-color: var(--color3);
-    margin-block: 5vh;
-    border-radius: 100vw;
 }
 
 ::-webkit-scrollbar-thumb{
     background-color: var(--color2);
-    border-radius: 100vw;
-}
-
-::-webkit-scrollbar-button{
-    background-color: var(--color3);
 }
 
 :root{
