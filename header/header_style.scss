@@ -91,7 +91,9 @@ header{
             line-height: 100%;
             width: 18ch;
             font-size: var(--font-l);
+            font-weight: bold;
             small{
+                font-weight: bold;
                 color: var(--color3);
             }
         }
