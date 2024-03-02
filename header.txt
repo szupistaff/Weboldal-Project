@@ -10,9 +10,9 @@ vagy
 
 <header>
     <div>
-        <img src="../header/logo.png" alt="logo" title="Pöttyös Patikárium">
+        <img src="../header/src/logo.png" alt="logo" title="Pöttyös Patikárium">
         <h1>Pöttyös Patikárium<br><small>Kisállatkereskedés</small></h1>
-        <img src="../header/mancs.png" alt="mancs">
+        <img src="../header/src/osszes.png">
     </div>
 </header>
 <div id="nav">

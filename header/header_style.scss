@@ -108,7 +108,7 @@ header{
         position: absolute;
         height: 102%;
         width: 100%;
-        background-image: url("../header/hatter.png");
+        background-image: url("../header/src/hatter.png");
         background-size: cover;
         z-index: -1;
         content: "";
@@ -186,13 +186,13 @@ header{
         input{
             display: block;
             appearance: none;
-            background-image: url(../header/menu_icon_white.png);
+            background-image: url(../header/src/menu_icon_white.png);
             background-size: contain;
             height: 100%;
             aspect-ratio: 1/1;
             cursor: pointer;
             &:checked{
-                background-image: url(../header/menu_icon_brown.png);
+                background-image: url(../header/src/menu_icon_brown.png);
                 & ~ div{
                     position: absolute;
                     left: 0;
