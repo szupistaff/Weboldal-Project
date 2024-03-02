@@ -1,4 +1,1 @@
-# Weboldal-Project
-Állatkereskedős project.
-love u david <3
-love u armin <3
+A "Header" frissebb verziói a Header branchben lesznek!
