@@ -37,11 +37,12 @@ main{
         border-bottom-left-radius: 2em;
         border: var(--color2) solid 0.5em;
         display: flex;
+        flex-wrap: wrap;
 
         > input{
             order: 1;
             appearance: none;
-            width: 5%;
+            flex-basis: 8%;
             background-color: var(--color2);
             border-top: transparent solid 14vh;
             border-bottom: transparent solid 14vh;
@@ -56,12 +57,11 @@ main{
         }
 
         > div{
-            width: 100%;
+            flex-basis: 92%;
             border-top-left-radius: 1.4em;
             border-bottom-left-radius: 1.4em;
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
 
             > img{
                 height: 60%;
@@ -75,12 +75,80 @@ main{
             > h2{
                 align-self: center;
                 text-align: center;
-                font-size: var(--font-l);
+                font-size: clamp(var(--font-m), var(--font-l), 2.9rem);
                 color: var(--color0);
                 font-family: Cooper, monospace;
                 letter-spacing: 0.5vw;
                 width: 100%;
                 border-right: var(--color2) solid 0.3vw;
+                border-bottom: var(--color2) solid 0.3vw;
+            }
+
+        }
+
+        > section{
+            display: none;
+            order: 1;
+            padding: 1em !important;
+            height: 60vh;
+            width: 100%;
+            gap: 2em;
+            flex-direction: column;
+            overflow-y: scroll;
+
+            > div{
+                width: 100%;
+                height: fit-content;
+                display: flex;
+
+                > div{
+                    flex-basis: 40%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-evenly;
+
+                    > img{
+                        flex-basis: 80%;
+                        object-fit: cover;
+                        object-position: top;
+                        border: var(--color2) solid 0.1em;
+                        width: 50%;
+                    }
+
+                    > h3{
+                        flex-basis: 20%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        color: var(--color1);
+                        font-family: Cooper;
+                        font-size: var(--font-l);
+                        width: 10ch;
+                    }
+
+                }
+
+                > p{
+                    flex-basis: 60%;
+                    font-size: var(--font-m);
+                    font-family: cursive, monospace;
+                    color: var(--color1);
+                    text-align: left;
+                    
+                    &::first-letter{
+                        font-size: var(--font-l);
+                    }
+                    
+                }
+
+            }
+
+            > div:nth-child(even){
+                > div{
+                    order: 1;
+                }
             }
 
         }
@@ -92,22 +160,76 @@ main{
 
 #dog:checked{
     border-left: none;
-    border-right: var(--color0) solid 3vw;
+    border-top: transparent solid 15vh;
+    border-bottom: transparent solid 15vh;
+    border-right: var(--color0) solid 5vw;
+    height: 30vh;
 
-    ~ #dogbox{
+    &:hover{
+        border-right-color: var(--color4);
+    }
+
+    ~ div{
         width: 90vw;
-        height: 70vh;
+        height: 30vh;
+    }
+
+    ~ section{
+        display: flex;
     }
 
 }
 
+
 #cat:checked{
     border-left: none;
-    border-right: var(--color0) solid 3vw;
+    border-top: transparent solid 15vh;
+    border-bottom: transparent solid 15vh;
+    border-right: var(--color0) solid 5vw;
+    height: 30vh;
 
-    ~ #catbox{
-        width: 90vw;
-        height: 70vh;
+    &:hover{
+        border-right-color: var(--color4);
     }
 
+    ~ div{
+        width: 90vw;
+        height: 30vh;
+    }
+
+    ~ section{
+        display: flex;
+    }
+
+}
+
+
+@media screen and (width <= 768px) {
+    main > div{
+        
+        > div{
+
+            > h2{
+                height: 30%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: calc(var(--font-l) + var(--font-m));
+            }
+
+        }
+
+        > section{
+            > div{
+                flex-direction: column;
+            }
+    
+            > div:nth-child(even){
+                > div{
+                    order: 0;
+                }
+            }
+        }
+        
+    }
 }
