@@ -133,7 +133,7 @@ main{
                 > p{
                     flex-basis: 60%;
                     font-size: var(--font-m);
-                    font-family: cursive, monospace;
+                    font-family: Georgia, monospace;
                     color: var(--color1);
                     text-align: left;
                     
@@ -222,6 +222,23 @@ main{
         > section{
             > div{
                 flex-direction: column;
+                > div{
+                    > h3{
+                        font-size: calc(var(--font-l) + var(--font-m));
+                    }
+                }
+
+                > p{
+                    font-size: calc(var(--font-l) + var(--font-xs) - 0.08rem);
+                    font-family: Courier, monospace;
+                    text-align: center;
+
+                    &::first-letter{
+                        font-size: calc(var(--font-l) + var(--font-m));
+                    }
+
+                }
+
             }
     
             > div:nth-child(even){
