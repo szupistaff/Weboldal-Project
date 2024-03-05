@@ -43,10 +43,10 @@ main{
             order: 1;
             appearance: none;
             flex-basis: 8%;
-            background-color: var(--color2);
-            border-top: transparent solid 14vh;
-            border-bottom: transparent solid 14vh;
-            border-left: var(--color0) solid 3vw;
+            flex-grow: 1;
+            background-image: url(../allatok/src/nyil.png);
+            background-size: cover;
+            background-repeat: round;
             z-index: 10;
             cursor: pointer;
 
@@ -159,10 +159,7 @@ main{
 
 
 #dog:checked{
-    border-left: none;
-    border-top: transparent solid 15vh;
-    border-bottom: transparent solid 15vh;
-    border-right: var(--color0) solid 5vw;
+    background-image: url(../allatok/src/nyil2.png);
     height: 30vh;
 
     &:hover{
@@ -182,10 +179,7 @@ main{
 
 
 #cat:checked{
-    border-left: none;
-    border-top: transparent solid 15vh;
-    border-bottom: transparent solid 15vh;
-    border-right: var(--color0) solid 5vw;
+    background-image: url(../allatok/src/nyil2.png);
     height: 30vh;
 
     &:hover{
