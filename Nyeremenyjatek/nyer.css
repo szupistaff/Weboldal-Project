@@ -3,6 +3,12 @@
     height: 0px;
     border-top: 50px solid transparent;
     border-bottom: 50px solid transparent;
-    border-left: 100px solid blue;
+    border-left: 100px solid palegoldenrod;
+    margin-left: 250px;
+}
+.BGDiv{
+    background-color: palegoldenrod;
+    width: 250px;
+    height: 100px;
     margin-top: 20px;
 }
