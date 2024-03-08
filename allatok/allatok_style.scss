@@ -107,6 +107,7 @@ main{
     
                     > div{
                         flex-basis: 40%;
+                        flex-grow: 1;
                         display: flex;
                         flex-direction: column;
                         align-items: center;
@@ -135,7 +136,7 @@ main{
                     }
     
                     > p{
-                        flex-basis: 50%;
+                        flex-basis: 55%;
                         font-size: var(--font-m);
                         font-family: Georgia, monospace;
                         color: var(--color1);
