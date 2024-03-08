@@ -49,11 +49,8 @@ main{
             background-repeat: round;
             z-index: 10;
             cursor: pointer;
-
-            &:hover{
-                border-left-color: var(--color4);
-            }
-
+            border: var(--color2) solid 0.1px;
+            image-rendering: -webkit-optimize-contrast;
         }
 
         > div{
@@ -158,13 +155,9 @@ main{
 }
 
 
-#dog:checked{
+input:checked{
     background-image: url(../allatok/src/nyil2.png);
     height: 30vh;
-
-    &:hover{
-        border-right-color: var(--color4);
-    }
 
     ~ div{
         width: 90vw;
@@ -176,27 +169,6 @@ main{
     }
 
 }
-
-
-#cat:checked{
-    background-image: url(../allatok/src/nyil2.png);
-    height: 30vh;
-
-    &:hover{
-        border-right-color: var(--color4);
-    }
-
-    ~ div{
-        width: 90vw;
-        height: 30vh;
-    }
-
-    ~ section{
-        display: flex;
-    }
-
-}
-
 
 @media screen and (width <= 768px) {
     main > div{
