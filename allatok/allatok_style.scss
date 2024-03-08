@@ -103,6 +103,8 @@ main{
                     width: 100%;
                     height: fit-content;
                     display: flex;
+                    padding: 2em !important;
+                    border-bottom: var(--color2) dashed 0.1em;
     
                     > div{
                         flex-basis: 40%;
@@ -167,7 +169,7 @@ input:checked{
     height: 30vh;
 
     ~ div{
-        width: 90vw;
+        width: 80vw;
         height: 30vh;
     }
 
