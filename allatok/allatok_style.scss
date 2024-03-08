@@ -22,134 +22,140 @@ main{
     height: fit-content;
     background-color: var(--color1);
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 2em;
     padding: 2em !important;
 
     > div{
-        flex-grow: 1;
-        height: fit-content;
-        min-width: 20em;
-        width: min-content;
-        max-width: 100%;
-        background-color: var(--color3);
-        border-top-left-radius: 2em;
-        border-bottom-left-radius: 2em;
-        border: var(--color2) solid 0.5em;
         display: flex;
-        flex-wrap: wrap;
-
-        > input{
-            order: 1;
-            appearance: none;
-            flex-basis: 8%;
-            flex-grow: 1;
-            background-image: url(../allatok/src/nyil.png);
-            background-size: cover;
-            background-repeat: round;
-            z-index: 10;
-            cursor: pointer;
-            border: var(--color2) solid 0.1px;
-            image-rendering: -webkit-optimize-contrast;
-        }
+        justify-content: center;
+        gap: inherit;
 
         > div{
-            flex-basis: 92%;
-            border-top-left-radius: 1.4em;
-            border-bottom-left-radius: 1.4em;
+            flex-grow: 0.6;
+            height: fit-content;
+            min-width: 20em;
+            width: min-content;
+            max-width: 100%;
+            background-color: var(--color3);
+            border-top-left-radius: 2em;
+            border-bottom-left-radius: 2em;
+            border: var(--color2) solid 0.5em;
             display: flex;
-            flex-direction: column;
-
-            > img{
-                height: 60%;
-                object-fit: cover;
-                border-top-left-radius: 1.4em;
-                border: var(--color2) solid 0.3vw;
+            flex-wrap: wrap;
+    
+            > input{
+                order: 1;
+                appearance: none;
+                flex-basis: 8%;
                 flex-grow: 1;
-                width: 100%;
+                background-image: url(../allatok/src/nyil.png);
+                background-size: cover;
+                background-repeat: round;
+                z-index: 10;
+                cursor: pointer;
+                border: var(--color2) solid 0.1px;
+                image-rendering: -webkit-optimize-contrast;
             }
-
-            > h2{
-                align-self: center;
-                text-align: center;
-                font-size: clamp(var(--font-m), var(--font-l), 2.9rem);
-                color: var(--color0);
-                font-family: Cooper, monospace;
-                letter-spacing: 0.5vw;
-                width: 100%;
-                border-right: var(--color2) solid 0.3vw;
-                border-bottom: var(--color2) solid 0.3vw;
-            }
-
-        }
-
-        > section{
-            display: none;
-            order: 1;
-            padding: 1em !important;
-            height: 60vh;
-            width: 100%;
-            gap: 2em;
-            flex-direction: column;
-            overflow-y: scroll;
-
+    
             > div{
-                width: 100%;
-                height: fit-content;
+                flex-basis: 92%;
+                border-top-left-radius: 1.4em;
+                border-bottom-left-radius: 1.4em;
                 display: flex;
-
+                flex-direction: column;
+    
+                > img{
+                    height: 60%;
+                    object-fit: cover;
+                    border-top-left-radius: 1.4em;
+                    border: var(--color2) solid 0.3vw;
+                    flex-grow: 1;
+                    width: 100%;
+                }
+    
+                > h2{
+                    align-self: center;
+                    text-align: center;
+                    font-size: clamp(var(--font-m), var(--font-l), 2.9rem);
+                    color: var(--color0);
+                    font-family: Cooper, monospace;
+                    letter-spacing: 0.5vw;
+                    width: 100%;
+                    border-right: var(--color2) solid 0.3vw;
+                    border-bottom: var(--color2) solid 0.3vw;
+                }
+    
+            }
+    
+            > section{
+                transform: scale(0);
+                height: 0;
+                width: 0;
+                order: 1;
+                gap: 2em;
+                flex-direction: column;
+                overflow-y: scroll;
+    
                 > div{
-                    flex-basis: 40%;
+                    width: 100%;
+                    height: fit-content;
                     display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: space-evenly;
-
-                    > img{
-                        flex-basis: 80%;
-                        object-fit: cover;
-                        object-position: top;
-                        border: var(--color2) solid 0.1em;
-                        width: 50%;
-                    }
-
-                    > h3{
-                        flex-basis: 20%;
+    
+                    > div{
+                        flex-basis: 40%;
                         display: flex;
+                        flex-direction: column;
                         align-items: center;
-                        justify-content: center;
-                        text-align: center;
+                        justify-content: space-evenly;
+    
+                        > img{
+                            flex-basis: 80%;
+                            object-fit: cover;
+                            object-position: top;
+                            border: var(--color2) solid 0.1em;
+                            width: 50%;
+                        }
+    
+                        > h3{
+                            flex-basis: 20%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            text-align: center;
+                            color: var(--color1);
+                            font-family: Cooper;
+                            font-size: var(--font-l);
+                            width: 10ch;
+                        }
+    
+                    }
+    
+                    > p{
+                        flex-basis: 60%;
+                        font-size: var(--font-m);
+                        font-family: Georgia, monospace;
                         color: var(--color1);
-                        font-family: Cooper;
-                        font-size: var(--font-l);
-                        width: 10ch;
+                        text-align: left;
+                        
+                        &::first-letter{
+                            font-size: var(--font-l);
+                        }
+                        
                     }
-
+    
                 }
-
-                > p{
-                    flex-basis: 60%;
-                    font-size: var(--font-m);
-                    font-family: Georgia, monospace;
-                    color: var(--color1);
-                    text-align: left;
-                    
-                    &::first-letter{
-                        font-size: var(--font-l);
+    
+                > div:nth-child(even){
+                    > div{
+                        order: 1;
                     }
-                    
                 }
-
+    
             }
-
-            > div:nth-child(even){
-                > div{
-                    order: 1;
-                }
-            }
-
+    
         }
-
     }
 
 }
@@ -166,6 +172,9 @@ input:checked{
 
     ~ section{
         display: flex;
+        height: 60vh;
+        width: 100%;
+        transform: scale(1);
     }
 
 }
