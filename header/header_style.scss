@@ -39,6 +39,10 @@ img{
     background-color: var(--color2);
 }
 
+::selection{
+    background-color: var(--color4);
+}
+
 :root{
     --color0: rgb(255, 255, 255);
     --color1: rgb(230, 205, 180);
