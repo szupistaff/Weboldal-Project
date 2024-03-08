@@ -24,14 +24,14 @@ main{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 2em;
+    gap: 5em;
     padding: 2em !important;
 
     > div{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: inherit;
+        gap: 3em;
 
         > div{
             flex-grow: 0.6;
