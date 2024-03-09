@@ -49,9 +49,25 @@ img {
     height: auto;
 }
 
+.container {
+    display: grid;
+    gap: 1.5rem;
+}
+
 .grid {
     display: grid;
     gap: 1.5rem;
+}
+
+.section {
+    padding-block: 5rem 1rem;
+}
+
+.section__title {
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-bold);
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 
@@ -120,3 +136,40 @@ img {
 
 
 /*========== TIPPEK ==========*/
+
+.tipp__container {
+    row-gap: 7.5rem;
+}
+
+.tipp__data {
+    text-align: center;
+}
+
+.tipp__content {
+    row-gap: 6rem;
+    padding-left: 1rem;
+}
+
+.tipp__card {
+    position: relative;
+    width: 200px;
+    background: var(--gradient-card);
+    padding: 9rem 0.75rem 0rem 0.75rem;
+    border: 2px solid var(--first-color-light);
+    border-radius: 1.5rem;
+}
+
+.tipp__img {
+    position: absolute;
+    top: -4.5rem;
+    left: 0;
+    right: 0;
+    width: 180px;
+    margin: 0 auto;
+}
+
+.tipp__title {
+    font-size: var(--h2-font-size);
+    text-align: center;
+    margin-top: 4rem;
+}
