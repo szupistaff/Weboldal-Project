@@ -71,6 +71,7 @@ main{
                     object-fit: cover;
                     border-top-left-radius: 1.4em;
                     border: var(--color2) solid 0.3vw;
+                    border-right: none;
                     flex-grow: 1;
                     width: 100%;
                 }
@@ -83,8 +84,6 @@ main{
                     font-family: Cooper, monospace;
                     letter-spacing: 0.5vw;
                     width: 100%;
-                    border-right: var(--color2) solid 0.3vw;
-                    border-bottom: var(--color2) solid 0.3vw;
                 }
     
             }
@@ -97,6 +96,7 @@ main{
                 gap: 2em;
                 flex-direction: column;
                 overflow-y: scroll;
+                background-repeat: space;
     
                 > div{
                     width: 100%;
@@ -140,6 +140,7 @@ main{
                         font-size: var(--font-m);
                         font-family: Georgia, monospace;
                         color: var(--color1);
+                        font-weight: bold;
                         text-align: left;
                         
                         &::first-letter{
@@ -155,12 +156,16 @@ main{
                         order: 1;
                     }
                 }
-    
             }
     
         }
     }
 
+}
+
+#kutya > section{
+    background-image: url(../allatok/src/mancs.jpg);
+    background-size: 18%;
 }
 
 
@@ -171,6 +176,10 @@ input:checked{
     ~ div{
         width: 80vw;
         height: 30vh;
+
+        > h2{
+            border-bottom: var(--color2) solid 0.3vw;
+        }
     }
 
     ~ section{
