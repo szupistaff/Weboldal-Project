@@ -49,12 +49,11 @@ img {
     height: auto;
 }
 
-  
-
 .grid {
     display: grid;
     gap: 1.5rem;
 }
+
 
 /*========== HOME ==========*/
 
