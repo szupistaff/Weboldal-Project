@@ -166,9 +166,92 @@ main{
 
         > section{
             background-color: var(--color0);
+            border: var(--color2) solid;
+            width: 70vw;
+
+            > div{
+                min-height: 2em;
+                font-size: var(--font-m);
+                background-color: var(--color4);
+                letter-spacing: 2vw;
+                font-family: Tahoma;
+                font-weight: bold;
+                color: var(--color0);
+                display: flex;
+                align-items: center;
+                gap: 2vw;
+                overflow: hidden;
+                text-wrap: nowrap;
+                font-style: italic;
+
+                > span{
+                    animation-name: akcio;
+                    animation-duration: 10s;
+                    animation-timing-function: linear;
+                    animation-iteration-count: infinite;
+                }
+                > span:nth-child(1){
+                    animation-delay: -3s;
+                }
+                > span:nth-child(2){
+                    animation-delay: -2s;
+                }
+            }
+
+            > section{
+                display: flex;
+                flex-wrap: wrap;
+                background-color: var(--color3);
+                border-block: var(--color2) solid;
+                justify-content: center;
+                align-items: center;
+
+                >p{
+                    flex-basis: 60%;
+                    flex-grow: 1;
+                    font-size: var(--font-s);
+                    font-family: Cambria;
+                    color: var(--color1);
+                    padding: 1em !important;
+
+                    > span:nth-child(1){
+                        font-size: 120%;
+                        font-weight: bold;
+                    }
+
+                    > span:nth-child(4){
+                        font-weight: bold;
+                        text-decoration: line-through;
+                    }
+
+                    > span:nth-child(5){
+                        font-weight: bold;
+                        color: var(--color0);
+                    }
+
+                    > span:nth-child(7){
+                        font-style: italic;
+                    }
+                }
+
+                >img{
+                    display: block;
+                    width: 30%;
+                    min-width: 10em;
+                }
+            }
         }
     }
 
+}
+
+@keyframes akcio{
+    from{
+        translate: 100vw;
+    }
+    to{
+        translate: -120vw;
+    }
 }
 
 #kutya > section{
