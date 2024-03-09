@@ -32,4 +32,92 @@ html,body{margin:0;padding:0;box-sizing:border-box}
 }
 
 
-/*HOME*/
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+  }
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+  
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+/*========== HOME ==========*/
+
+.home__container {
+    padding-top: 2.5rem;
+    row-gap: 2rem;
+
+}
+
+.home__img {
+    width: 270px;
+    justify-self: center;
+}
+
+.home__data {
+    text-align: center;
+}
+
+.home__title {
+    font-size: var(--biggest-font-size);
+    font-weight: var(--font-bold);
+    margin: 1rem;
+}
+
+.home__title span {
+    color: var(--first-color);
+}
+
+.home__description {
+    margin-bottom: 3rem;
+}
+
+.home__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    /*========== HOME -> BUTTON ==========*/
+    .button {
+        background-color: var(--white-color);
+        color: var(--black-color);
+        font-weight: var(--font-bold);
+        padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+        border-radius: 4rem;
+        display: inline-flex;
+        align-items: center;
+        column-gap: 0.5rem;
+    }
+
+    .button span {
+        background-color: var(--first-color);
+        padding: .5rem;
+        font-size: 1.25rem;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        transition: .4s;
+    }
+
+    .button:hover span {
+        transform: translateX(.15rem) rotate(-30deg);
+    }
+
+
+/*========== TIPPEK ==========*/
