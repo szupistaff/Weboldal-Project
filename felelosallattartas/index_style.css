@@ -14,7 +14,7 @@ html,body{margin:0;padding:0;box-sizing:border-box}
     --body-color: #B5A18E;
     --container-color: rgb(31, 31, 33);
     --shadow-img: 0 0 48px rgba(137, 206, 75, 0.4);
-    --gradient-card: linear-gradient(180deg, rgba(181, 161, 142, 1), rgba(90, 80, 75, 1));
+    --gradient-card: linear-gradient(180deg, rgba(244, 239, 233, 1), rgba(218, 183, 141, 1));
 
   
     /*.5rem = 8px | 1rem = 16px*/
@@ -154,6 +154,15 @@ li {
 
 /*========== TIPPEK ==========*/
 
+.tipp {
+    background-image: url(src/hatter2.jpg);
+    background: cover;
+}
+
+.tipp .section__title {
+    color: var(--text-color);
+}
+
 .tipp__container {
     row-gap: 7.5rem;
 }
@@ -173,7 +182,7 @@ li {
     width: 200px;
     background: var(--gradient-card);
     padding: 9rem 0.75rem 0rem 0.75rem;
-    border: 2px solid var(--first-color-light);
+    border: 2px solid rgb(218, 183, 141);
     border-radius: 1.5rem;
 }
 
