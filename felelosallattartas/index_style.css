@@ -3,9 +3,7 @@
 html,body{margin:0;padding:0;box-sizing:border-box}
 
 :root {
-    --header-height: 3.5rem;
-    /*========== Colors ==========*/
-    /*Color mode HSL(hue, saturation, lightness)*/
+    /*========== Színek ==========*/
     --first-color: rgb(137, 206, 75);
     --first-color-alt: rgb(124, 189, 67);
     --first-color-light: rgb(178, 226, 120);
@@ -19,7 +17,6 @@ html,body{margin:0;padding:0;box-sizing:border-box}
     --gradient-card: linear-gradient(180deg, rgba(21, 21, 22, 1), rgba(77, 116, 57, 1));
 
   
-    /*========== Font and typography ==========*/
     /*.5rem = 8px | 1rem = 16px*/
     --body-font: "Montserrat", sans-serif;
     --biggest-font-size: 2.25rem;
@@ -29,8 +26,10 @@ html,body{margin:0;padding:0;box-sizing:border-box}
     --normal-font-size: .938rem;
     --small-font-size: .813rem;
   
-    /*========== Font weight ==========*/
     --font-regular: 400;
     --font-semi-bold: 600;
     --font-bold: 700;
 }
+
+
+/*HOME*/
