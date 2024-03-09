@@ -140,6 +140,7 @@ header{
 
             &:hover, :focus, :target{
                 transform: scale(1.1);
+                color: var(--color4);
             }
 
         }
@@ -151,6 +152,60 @@ header{
     }
     
 }
+
+
+/* Footer */
+
+footer{
+    width: 100%;
+    min-height: 8em;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10vw;
+    background-image: url(../header/src/hatter.png);
+    background-size: cover;
+    padding: 2em !important;
+
+    > ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+
+        > li{
+            display: flex;
+            align-items: center;
+            gap: 0.5em;
+
+            > img{
+                height: 2.5cqh;
+                filter: invert(1);
+            }
+
+            > a{
+                color: var(--color0);
+                text-decoration: none;
+                font-family: Verdana;
+            }
+            
+            &:hover{
+                color: var(--color4);
+            }
+        }
+    }
+
+    > span{
+        text-align: center;
+        font-size: var(--font-s);
+        color: var(--color0);
+    }
+}
+
+
+
+
+
 
 
 /* Reszponzív rész */
