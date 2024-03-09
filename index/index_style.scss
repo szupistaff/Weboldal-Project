@@ -9,6 +9,7 @@
     --font-m: clamp(0.9rem, 2vw, 2rem);
     --font-s: clamp(0.75rem, 2vw, 1.5rem);
     --font-xs: clamp(0.25rem, 1vw, 1rem);
+    --p-font: "Montserrat", sans-serif;
 }
 main {
     display: flex;
@@ -18,8 +19,8 @@ main {
 }
 p {
     margin: 20px;
-    font-size: calc(var(--font-m) - 1.3px);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: calc(var(--font-m) - 1.7px);
+    font-family: var(--p-font);
     color: var(--color3);
     text-align: justify;
 }
@@ -38,6 +39,36 @@ h1 {
     aspect-ratio: 3/2;
     border-radius: 1em;
 }
+.mkep {
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 20px;
+    height: 20rem;
+    aspect-ratio: 3/2;
+    border-radius: 1em;
+}
+.kep:hover{
+    content: url(img/pdog.gif);
+    transition: 0.2s;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 20px;
+    height: 20rem;
+    aspect-ratio: 3/2;
+    border-radius: 1em;
+}
+.mkep:hover {
+    content: url(img/chipi.gif);
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 20px;
+    height: 20rem;
+    aspect-ratio: 3/2;
+    border-radius: 1em;
+}
 .kepdiv{
     display: flex;
     justify-content: center;
@@ -48,3 +79,4 @@ h1 {
     flex-basis: 33%;
     flex-grow: 1;
 }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
