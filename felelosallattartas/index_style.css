@@ -148,6 +148,7 @@ img {
 .tipp__content {
     row-gap: 6rem;
     padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .tipp__card {
@@ -166,6 +167,7 @@ img {
     right: 0;
     width: 180px;
     margin: 0 auto;
+    transition: 0.4s;
 }
 
 .tipp__title {
@@ -173,3 +175,19 @@ img {
     text-align: center;
     margin-top: 4rem;
 }
+
+.tipp__card:nth-child(odd) {
+    rotate: -5deg;
+}
+
+.tipp__card:nth-child(even) {
+    justify-self: flex-end;
+    rotate: 5deg;
+}
+
+.tipp__card:hover .tipp__img {
+    transform: translateY(-0.5rem);
+}
+
+/*az nth-child(odd) az minden páratlan indexű elemet választ ki, az nth-child(even) pedig minden párosat, itt nekem tökéletesen alkalmazható design szempontjából*/
+
