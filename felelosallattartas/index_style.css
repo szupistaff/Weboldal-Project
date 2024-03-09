@@ -49,6 +49,19 @@ img {
     height: auto;
 }
 
+h1, h2, h3, h4 {
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+}
+
 .container {
     display: grid;
     gap: 1.5rem;
@@ -185,9 +198,45 @@ img {
     rotate: 5deg;
 }
 
+/*az nth-child(odd) az minden páratlan indexű elemet választ ki, az nth-child(even) pedig minden párosat, itt nekem tökéletesen alkalmazható design szempontjából*/
+
 .tipp__card:hover .tipp__img {
     transform: translateY(-0.5rem);
 }
 
-/*az nth-child(odd) az minden páratlan indexű elemet választ ki, az nth-child(even) pedig minden párosat, itt nekem tökéletesen alkalmazható design szempontjából*/
 
+/*========== FELELŐS ÁLLATTARTÁS ==========*/
+
+
+.care__container {
+    padding-top: 2rem;
+    row-gap: 2rem;
+}
+
+.care__img {
+    width: 270px;
+    justify-self: center;
+}
+
+.care__list {
+    display: grid;
+    row-gap: 1rem;
+}
+
+.care__item {
+    display: flex;
+    column-gap: 0.5rem;
+    align-items: flex-start;
+}
+
+.care__item i {
+    font-size: 1.5rem;
+    color: var(--first-color);
+    margin-top: 15px;
+}
+
+/*========== RESPONZIVITÁS ==========*/
+
+/* SMALL */
+/* MEDIUM */
+/* LARGE */
