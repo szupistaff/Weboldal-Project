@@ -19,16 +19,16 @@ main {
 }
 p {
     margin: 20px;
-    font-size: calc(var(--font-m) - 1.7px);
+    font-size: calc(var(--font-m) - 5px);
     font-family: var(--p-font);
     color: var(--color3);
     text-align: justify;
 }
 h1 {
     margin: 20px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: var(--color3);
-        text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--color3);
+    text-align: center;
 }
 .kep {
     align-self: center;
