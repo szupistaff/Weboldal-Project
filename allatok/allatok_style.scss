@@ -156,6 +156,10 @@ main{
                         order: 1;
                     }
                 }
+
+                > div:last-child{
+                    border-bottom: none;
+                }
             }
     
         }
@@ -174,7 +178,7 @@ input:checked{
     height: 30vh;
 
     ~ div{
-        width: 80vw;
+        width: 78vw;
         height: 30vh;
 
         > h2{
