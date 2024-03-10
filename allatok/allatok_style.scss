@@ -129,7 +129,7 @@ main{
                             justify-content: center;
                             text-align: center;
                             color: var(--color1);
-                            font-family: Cooper;
+                            font-family: Verdana;
                             font-size: var(--font-l);
                             width: 10ch;
                         }
@@ -143,6 +143,8 @@ main{
                         color: var(--color1);
                         font-weight: bold;
                         text-align: left;
+                        display: flex;
+                        align-items: center;
                         
                         &::first-letter{
                             font-size: var(--font-l);
