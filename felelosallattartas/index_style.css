@@ -285,3 +285,9 @@ li {
 }
 
 
+.care-img:hover {
+
+    content: url(img/.gif);
+    transition: 0.2s;
+
+}
