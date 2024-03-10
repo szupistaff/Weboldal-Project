@@ -163,6 +163,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 10vw;
     background-image: url(../header/src/hatter.png);
     background-size: cover;
@@ -187,10 +188,10 @@ footer{
                 color: var(--color0);
                 text-decoration: none;
                 font-family: Verdana;
-            }
-            
-            &:hover{
-                color: var(--color4);
+
+                &:hover{
+                    color: var(--color4);
+                }
             }
         }
     }
@@ -234,6 +235,7 @@ footer{
         align-items: start;
 
         div{
+            border-right: var(--color2) solid;
             position: absolute;
             left: -100vw;
             top: 100%;
@@ -247,8 +249,11 @@ footer{
             height: 100%;
             aspect-ratio: 1/1;
             cursor: pointer;
+
+
             &:checked{
                 background-image: url(../header/src/menu_icon_brown.png);
+                border: var(--color2) solid;
                 & ~ div{
                     position: absolute;
                     left: 0;

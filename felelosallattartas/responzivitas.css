@@ -1,0 +1,124 @@
+/*========== RESPONZIVITÁS ==========*/
+
+/* SMALL */
+@media screen and (min-width: 320px) {
+    .care-container {
+        grid-template-columns: 400px;
+        justify-content: center;
+    }
+    .container {
+        margin-inline: 1rem;
+    }
+
+    .home-title {
+        font-size: 2rem;
+    }
+
+}
+
+/* MEDIUM */
+
+@media screen and (min-width: 576px) {
+    .home-container, 
+    .tipp-container, 
+    .care-container {
+        grid-template-columns: 400px;
+        justify-content: center;
+    }
+    
+    .tipp-content {
+        row-gap: 6rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+    
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    .tipp-content {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 4rem;
+    }
+
+    .tipp-card:nth-child(even) {
+        transform: translateY(10rem);
+    }
+
+}
+
+
+
+/* LARGE */
+
+@media screen and (min-width: 1150px) {
+    .container {
+        margin-inline: auto;
+    }
+
+    .section {
+        padding-block: 7rem 2rem;
+    }
+
+    .section__title {
+        margin-bottom: 1.5rem;
+    }
+
+    .home-container {
+        grid-template-columns: 480px 535px;
+        align-items: center;
+        column-gap: 4rem;
+        padding-top: 4rem;
+    }
+
+    .home-img {
+        width: 480px;
+    }
+
+    .home-data {
+        text-align: initial;
+    }
+
+    .home-description {
+        margin-bottom: 4.5rem;
+    }
+
+    .home-title {
+        font-size: 3.5rem;
+    }
+
+    .tipp-container {
+        grid-template-columns: 412px 490px;
+        align-items: center;
+        column-gap: 7.5rem;
+    }
+    .tipp-data, 
+    .tipp-data .section__title {
+        text-align: initial;
+    }
+
+    .tipp-content {
+        row-gap: 8.5rem;
+    }
+
+    .tipp-title {
+        font-size: var(--h3-font-size);
+    }
+
+    .care-container {
+        grid-template-columns: 480px 385px;
+        align-items: center;
+        column-gap: 8rem;
+        padding-top: 3rem;
+    }
+
+    .care-img {
+        width: 480px;
+    }
+
+    .care-list {
+        row-gap: 1.5rem;
+    }
+}

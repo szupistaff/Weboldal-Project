@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+html,body{margin:0;padding:0;box-sizing:border-box}
+
+:root {
+    /*========== Színek ==========*/
+    --important-color: rgb(127, 194, 68);
+
+    --title-color: rgb(250, 250, 252);
+    --text-color: rgb(90, 80, 75);
+    --white-color: rgb(250, 250, 252);
+    --black-color: rgb(10, 10, 11);
+    --body-color: #B5A18E;
+    --container-color: rgb(31, 31, 33);
+    --gradient-card: linear-gradient(180deg, rgba(244, 239, 233, 1), rgba(218, 183, 141, 1));
+
+  
+    /*.5rem = 8px | 1rem = 16px*/
+    --body-font: "Montserrat", sans-serif;
+    --biggest-font-size: 2.25rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+
+    --font-semi-bold: 600;
+    --font-bold: 700;
+}
+
+
+/* Alap beállítások */
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+h1, h2, h3, h4 {
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    transition: 0.4s;
+}
+
+.container {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section {
+    padding-block: 5rem 1rem;
+}
+
+.section__title {
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-bold);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+
+/* HOME */
+
+.home-container {
+    padding-top: 2.5rem;
+    row-gap: 2rem;
+
+}
+
+.home-data {
+    text-align: center;
+}
+
+.home-title {
+    font-size: var(--biggest-font-size);
+    font-weight: var(--font-bold);
+    margin: 1rem;
+}
+
+.home-title span {
+    color: var(--important-color);
+}
+
+.home-description {
+    margin-bottom: 3rem;
+}
+
+.home-img {
+    width: 270px;
+    justify-self: center;
+    transition: 0.4s;
+}
+
+.home-img:hover {
+    transform: scale(1.10);
+}
+
+
+.home-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    /* HOME -> BUTTON */
+    .button {
+        background-color: var(--white-color);
+        color: var(--black-color);
+        font-weight: var(--font-bold);
+        padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+        border-radius: 4rem;
+        display: inline-flex;
+        align-items: center;
+        column-gap: 0.5rem;
+    }
+
+    .button span {
+        background-color: var(--important-color);
+        padding: .5rem;
+        font-size: 1.25rem;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        transition: .4s;
+    }
+
+    .button:hover span {
+        transform: translateX(.15rem) rotate(360deg);
+    }
+
+
+/* TIPPEK */
+
+.tipp {
+    background-image: url(src/hatter2.jpg);
+    background: cover;
+}
+
+.tipp .section__title {
+    color: var(--text-color);
+}
+
+.tipp-container {
+    row-gap: 7.5rem;
+}
+
+.tipp-card {
+    position: relative;
+    width: 200px;
+    background: var(--gradient-card);
+    padding: 9rem 0.75rem 0rem 0.75rem;
+    border: 2px solid rgb(218, 183, 141);
+    border-radius: 1.5rem;
+}
+
+.tipp-card:nth-child(odd) {
+    rotate: -5deg;
+}
+
+.tipp-card:nth-child(even) {
+    justify-self: flex-end;
+    rotate: 5deg;
+}
+
+/*az nth-child(odd) az minden páratlan indexű elemet választ ki, az nth-child(even) pedig minden párosat, itt nekem tökéletesen alkalmazható design szempontjából*/
+
+.tipp-data {
+    text-align: center;
+}
+
+.tipp-content {
+    row-gap: 6rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.tipp-title {
+    font-size: var(--h2-font-size);
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.tipp-description span {
+    color: var(--important-color);
+    font-weight: var(--font-semi-bold);
+}
+
+.tipp-img {
+    position: absolute;
+    top: -4.5rem;
+    width: 180px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: 0.4s;
+}
+
+#cat {
+    width: 135px;
+}
+
+
+.tipp-card .tipp-img:hover {
+    transform: scale(1.10);
+}
+
+
+/*
+.tipp-card:hover .tipp-img {
+    transform: translateY(-0.5rem);
+}*/
+
+
+/* FELELŐS ÁLLATTARTÁS */
+
+
+.care-container {
+    padding-top: 2rem;
+    row-gap: 2rem;
+}
+
+.care-list {
+    display: grid;
+    row-gap: 1rem;
+}
+
+.care-item {
+    display: flex;
+    column-gap: 0.5rem;
+    align-items: center;
+}
+
+.care-item i {
+    font-size: 1.5rem;
+    color: var(--important-color);
+    margin-top: 15px;
+}
+
+.care-item i:hover {
+    transform: scale(1.5);
+}
+
+.care-item:hover {
+    transform: translateX(1.5rem);
+}
+
+
+.care-img {
+    width: 270px;
+    justify-self: center;
+    transition: 0.4s;
+}
+
+.care-img:hover {
+    transform: scale(1.10);
+}
