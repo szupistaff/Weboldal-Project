@@ -4,7 +4,7 @@ html,body{margin:0;padding:0;box-sizing:border-box}
 
 :root {
     /*========== Színek ==========*/
-    --first-color: rgb(137, 206, 75);
+    --important-color: rgb(127, 194, 68);
 
     --title-color: rgb(250, 250, 252);
     --text-color: rgb(90, 80, 75);
@@ -12,7 +12,6 @@ html,body{margin:0;padding:0;box-sizing:border-box}
     --black-color: rgb(10, 10, 11);
     --body-color: #B5A18E;
     --container-color: rgb(31, 31, 33);
-    --shadow-img: 0 0 48px rgba(137, 206, 75, 0.4);
     --gradient-card: linear-gradient(180deg, rgba(244, 239, 233, 1), rgba(218, 183, 141, 1));
 
   
@@ -29,11 +28,19 @@ html,body{margin:0;padding:0;box-sizing:border-box}
 }
 
 
+/* Alap beállítások */
+
 body {
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
     color: var(--text-color);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 p {
@@ -44,11 +51,6 @@ a {
     text-decoration: none;
 }
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
 
 h1, h2, h3, h4 {
     color: var(--title-color);
@@ -61,14 +63,10 @@ ul {
 
 li {
     display: flex;
+    transition: 0.4s;
 }
 
 .container {
-    display: grid;
-    gap: 1.5rem;
-}
-
-.grid {
     display: grid;
     gap: 1.5rem;
 }
@@ -84,50 +82,61 @@ li {
     margin-bottom: 1rem;
 }
 
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
 
-/*========== HOME ==========*/
 
-.home__container {
+/* HOME */
+
+.home-container {
     padding-top: 2.5rem;
     row-gap: 2rem;
 
 }
 
-.home__img {
-    width: 270px;
-    justify-self: center;
-}
-
-.home__data {
+.home-data {
     text-align: center;
 }
 
-.home__title {
+.home-title {
     font-size: var(--biggest-font-size);
     font-weight: var(--font-bold);
     margin: 1rem;
 }
 
-.home__title span {
-    color: var(--first-color);
+.home-title span {
+    color: var(--important-color);
 }
 
-.home__description {
+.home-description {
     margin-bottom: 3rem;
 }
 
-.home__buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.home-img {
+    width: 270px;
+    justify-self: center;
+    transition: 0.4s;
 }
 
-    /*========== HOME -> BUTTON ==========*/
+.home-img:hover {
+    transform: scale(1.10);
+}
+
+
+.home-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    /* HOME -> BUTTON */
     .button {
         background-color: var(--white-color);
         color: var(--black-color);
         font-weight: var(--font-bold);
-        padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+        padding: 0.5rem 0.5rem 0.5rem 1.5rem;
         border-radius: 4rem;
         display: inline-flex;
         align-items: center;
@@ -135,7 +144,7 @@ li {
     }
 
     .button span {
-        background-color: var(--first-color);
+        background-color: var(--important-color);
         padding: .5rem;
         font-size: 1.25rem;
         border-radius: 50%;
@@ -145,11 +154,11 @@ li {
     }
 
     .button:hover span {
-        transform: translateX(.15rem) rotate(-30deg);
+        transform: translateX(.15rem) rotate(360deg);
     }
 
 
-/*========== TIPPEK ==========*/
+/* TIPPEK */
 
 .tipp {
     background-image: url(src/hatter2.jpg);
@@ -160,21 +169,11 @@ li {
     color: var(--text-color);
 }
 
-.tipp__container {
+.tipp-container {
     row-gap: 7.5rem;
 }
 
-.tipp__data {
-    text-align: center;
-}
-
-.tipp__content {
-    row-gap: 6rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.tipp__card {
+.tipp-card {
     position: relative;
     width: 200px;
     background: var(--gradient-card);
@@ -183,188 +182,104 @@ li {
     border-radius: 1.5rem;
 }
 
-.tipp__img {
-    position: absolute;
-    top: -4.5rem;
-    left: 0;
-    right: 0;
-    width: 180px;
-    margin: 0 auto;
-    transition: 0.4s;
-}
-
-.tipp__title {
-    font-size: var(--h2-font-size);
-    text-align: center;
-    margin-top: 4rem;
-}
-
-.tipp__card:nth-child(odd) {
+.tipp-card:nth-child(odd) {
     rotate: -5deg;
 }
 
-.tipp__card:nth-child(even) {
+.tipp-card:nth-child(even) {
     justify-self: flex-end;
     rotate: 5deg;
 }
 
 /*az nth-child(odd) az minden páratlan indexű elemet választ ki, az nth-child(even) pedig minden párosat, itt nekem tökéletesen alkalmazható design szempontjából*/
 
-.tipp__card:hover .tipp__img {
-    transform: translateY(-0.5rem);
+.tipp-data {
+    text-align: center;
+}
+
+.tipp-content {
+    row-gap: 6rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.tipp-title {
+    font-size: var(--h2-font-size);
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.tipp-description span {
+    color: var(--important-color);
+    font-weight: var(--font-semi-bold);
+}
+
+.tipp-img {
+    position: absolute;
+    top: -4.5rem;
+    width: 180px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: 0.4s;
+}
+
+#cat {
+    width: 135px;
 }
 
 
-/*========== FELELŐS ÁLLATTARTÁS ==========*/
+.tipp-card .tipp-img:hover {
+    transform: scale(1.10);
+}
 
 
-.care__container {
+/*
+.tipp-card:hover .tipp-img {
+    transform: translateY(-0.5rem);
+}*/
+
+
+/* FELELŐS ÁLLATTARTÁS */
+
+
+.care-container {
     padding-top: 2rem;
     row-gap: 2rem;
 }
 
-.care__img {
-    width: 270px;
-    justify-self: center;
-}
-
-.care__list {
+.care-list {
     display: grid;
     row-gap: 1rem;
 }
 
-.care__item {
+.care-item {
     display: flex;
     column-gap: 0.5rem;
     align-items: center;
 }
 
-.care__item i {
+.care-item i {
     font-size: 1.5rem;
-    color: var(--first-color);
+    color: var(--important-color);
     margin-top: 15px;
 }
 
-/*========== RESPONZIVITÁS ==========*/
-
-/* SMALL */
-@media screen and (min-width: 320px) {
-    .care__container {
-        grid-template-columns: 400px;
-        justify-content: center;
-    }
-    .container {
-        margin-inline: 1rem;
-    }
-
-    .home__title {
-        font-size: 2rem;
-    }
+.care-item i:hover {
+    transform: scale(1.5);
 }
 
-/* MEDIUM */
-
-@media screen and (min-width: 576px) {
-    .home__container, 
-    .tipp__container, 
-    .care__container {
-        grid-template-columns: 400px;
-        justify-content: center;
-    }
-    
-    .tipp__content {
-        row-gap: 6rem;
-        padding-left: 0rem;
-        padding-right: 0rem;
-    }
-    
+.care-item:hover {
+    transform: translateX(1.5rem);
 }
 
 
-
-
-@media screen and (min-width: 768px) {
-    .tipp__content {
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 4rem;
-    }
-
-    .tipp__card:nth-child(even) {
-        transform: translateY(10rem);
-    }
-
+.care-img {
+    width: 270px;
+    justify-self: center;
+    transition: 0.4s;
 }
 
-
-
-/* LARGE */
-
-@media screen and (min-width: 1150px) {
-    .container {
-        margin-inline: auto;
-    }
-
-    .section {
-        padding-block: 7rem 2rem;
-    }
-
-    .section__title {
-        margin-bottom: 1.5rem;
-    }
-
-    .home__container {
-        grid-template-columns: 480px 535px;
-        align-items: center;
-        column-gap: 4rem;
-        padding-top: 4rem;
-    }
-
-    .home__img {
-        width: 480px;
-    }
-
-    .home__data {
-        text-align: initial;
-    }
-
-    .home__description {
-        margin-bottom: 4.5rem;
-    }
-
-    .home__title {
-        font-size: 3.5rem;
-    }
-
-    .tipp__container {
-        grid-template-columns: 412px 490px;
-        align-items: center;
-        column-gap: 7.5rem;
-    }
-    .tipp__data, 
-    .tipp__data .section__title {
-        text-align: initial;
-    }
-
-    .tipp__content {
-        row-gap: 8.5rem;
-    }
-
-    .tipp__title {
-        font-size: var(--h3-font-size);
-    }
-
-    .care__container {
-        grid-template-columns: 480px 385px;
-        align-items: center;
-        column-gap: 8rem;
-        padding-top: 3rem;
-    }
-
-    .care__img {
-        width: 480px;
-    }
-
-    .care__list {
-        row-gap: 1.5rem;
-    }
+.care-img:hover {
+    transform: scale(1.10);
 }
