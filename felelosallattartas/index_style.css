@@ -283,3 +283,13 @@ li {
 .care-img:hover {
     transform: scale(1.10);
 }
+
+
+.care-img:hover {
+    content: url(src/2n0F.gif);
+    transition: 0.2s;
+    top: 2.5rem;
+    width: 100%;
+    aspect-ratio: 3/2;
+    border-radius: 1em;
+}
