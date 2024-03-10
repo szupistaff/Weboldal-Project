@@ -68,5 +68,9 @@
 
 main {
     z-index: 1;
-    display: flex !important; 
+    display: flex !important;
+    background-color: #b9c9a5;
 }
+
+
+
