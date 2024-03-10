@@ -235,6 +235,7 @@ footer{
         align-items: start;
 
         div{
+            border-right: var(--color2) solid;
             position: absolute;
             left: -100vw;
             top: 100%;
@@ -248,8 +249,11 @@ footer{
             height: 100%;
             aspect-ratio: 1/1;
             cursor: pointer;
+
+
             &:checked{
                 background-image: url(../header/src/menu_icon_brown.png);
+                border: var(--color2) solid;
                 & ~ div{
                     position: absolute;
                     left: 0;
