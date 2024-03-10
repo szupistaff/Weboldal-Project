@@ -10,9 +10,9 @@ vagy
 
 <header>
     <div>
-        <img src="../header/logo.png" alt="logo" title="Pöttyös Patikárium">
+        <img src="../header/src/logo.png" alt="logo" title="Pöttyös Patikárium">
         <h1>Pöttyös Patikárium<br><small>Kisállatkereskedés</small></h1>
-        <img src="../header/mancs.png" alt="mancs">
+        <img src="../header/src/osszes.png">
     </div>
 </header>
 <div id="nav">
@@ -22,3 +22,22 @@ vagy
     <div id="allataink"><a href="#c">Állataink</a></div>
     <div id="nyeremeny"><a href="#d">Nyereményjáték</a></div>
 </div>
+
+
+
+
+FOOTER:
+
+
+
+<footer>
+    <ul>
+        <li><img src="../header/src/facebook.png"><a href="https://www.facebook.com/pottyospatikarum">Facebook</a></li>
+        <li><img src="../header/src/instagram.png"><a href="https://www.instagram.com/pottyospatikarum">Instagram</a></li>
+        <li><img src="../header/src/youtube.png"><a href="https://www.youtube.com/pottyospatikarum">Youtube</a></li>
+        <li><img src="../header/src/wordpress.png"><a href="https://pottyospatikarum.wordpress.com/">Blog</a></li>
+        <li><img src="../header/src/mail.png"><a href="mailto:pottyospatikarum@gmail.com">pottyospatikarum@gmail.com</a></li>
+        <li><img src="../header/src/phone.png"><a>+36 01 123 4567</a></li>
+    </ul>
+    <span>Pöttyös Patikárium Kisállatkereskedés © 2024<br><br>Minden jog fenntartva!</span>
+</footer>
