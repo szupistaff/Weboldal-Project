@@ -11,6 +11,10 @@
         <source src="img/chipii.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
+    <audio id="hellnaw">
+        <source src="img/hellnaw.mp3" type="audio/mpeg" id="hellnaw">
+        Your browser does not support the audio element.
+    </audio>
     <style>
         .kep {
             width: 100%;
@@ -44,8 +48,10 @@
 <body>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            var button = document.querySelector('.mkep');
+            var image = document.querySelector('.kep');
+            var image2 = document.querySelector('.mkep');
             var audio = document.getElementById('chipi');
+            var audio2 = document.getElementById('hellnaw')
 
             function playAudio() {
                 audio.currentTime = 0;
@@ -56,9 +62,20 @@
                 audio.currentTime = 0;
                 audio.pause();
             }
+            function playAudio2() {
+                audio2.currentTime = 0;
+                audio2.volume = 0.5
+                audio2.play();
+            }
+            function stopAudio2() {
+                audio2.currentTime = 0;
+                audio2.pause();
+            }
+            image.addEventListener('mouseenter', playAudio2);
+            image.addEventListener('mouseleave', stopAudio2);
+            image2.addEventListener('mouseenter', playAudio);
+            image2.addEventListener('mouseleave', stopAudio)
 
-            button.addEventListener('mouseenter', playAudio);
-            button.addEventListener('mouseleave', stopAudio)
         });
     </script>
     <header>
