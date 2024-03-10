@@ -53,4 +53,32 @@ h1 {
     aspect-ratio: 3/2;
     border-radius: 1em;
 }
+@media screen and (width<=768px) {
+    .kep {
+            width: 60%;
+            aspect-ratio: 3/2;
+            border-radius: 1em;
+        }
+    
+    .mkep {
+        width: 60%;
+        aspect-ratio: 3/2;
+        border-radius: 1em;
+    }
+
+    .kep:hover {
+        content: url(img/pdog.gif);
+        transition: 0.2s;
+        width: 60%;
+        aspect-ratio: 3/2;
+        border-radius: 1em;
+    }
+
+    .mkep:hover {
+        content: url(img/chipi.gif);
+        width: 60%;
+        aspect-ratio: 3/2;
+        border-radius: 1em;
+    }
+}
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
