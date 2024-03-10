@@ -79,9 +79,9 @@ main{
                 > h2{
                     align-self: center;
                     text-align: center;
-                    font-size: clamp(var(--font-m), var(--font-l), 2.9rem);
+                    font-size: calc(var(--font-m) + var(--font-xs));
                     color: var(--color0);
-                    font-family: Cooper, monospace;
+                    font-family: Pacifico;
                     letter-spacing: 0.5vw;
                     width: 100%;
                 }
@@ -166,7 +166,6 @@ main{
 
         > section{
             background-color: var(--color0);
-            border: var(--color2) solid;
             width: 70vw;
 
             > div{
@@ -202,7 +201,7 @@ main{
                 display: flex;
                 flex-wrap: wrap;
                 background-color: var(--color3);
-                border-block: var(--color2) solid;
+                border: var(--color2) solid;
                 justify-content: center;
                 align-items: center;
 
@@ -262,14 +261,18 @@ main{
 
 input:checked{
     background-image: url(../allatok/src/nyil2.png);
-    height: 30vh;
+    height: 35vh;
 
     ~ div{
         width: 78vw;
-        height: 30vh;
+        height: 35vh;
 
         > h2{
+            flex-basis: 35%;
             border-bottom: var(--color2) solid 0.3vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 
@@ -292,7 +295,7 @@ input:checked{
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                font-size: calc(var(--font-l) + var(--font-m));
+                font-size: calc(var(--font-l));
             }
 
         }
@@ -307,7 +310,7 @@ input:checked{
                 }
 
                 > p{
-                    font-size: calc(var(--font-m) + var(--font-s) - 0.08rem);
+                    font-size: calc(var(--font-m) + var(--font-xs));
                     font-family: Cambria, monospace;
                     text-align: center;
 
@@ -336,7 +339,7 @@ input:checked{
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                font-size: calc(var(--font-l) + var(--font-m));
+                font-size: calc(var(--font-l) + var(--font-xs));
             }
 
         }
