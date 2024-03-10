@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="../header/header_style.css">
     <link rel="stylesheet" href="nyer.css">
-    
+    <audio id="lobsta">
+        <source src="Blue lobster meme.mp3" type="audio/mp3">
+    </audio>
 
     <title>Header</title>
 </head>
@@ -26,7 +28,25 @@
         <div id="nyeremeny"><a href="#d">Nyereményjáték</a></div>
     </div>
 
-    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var button = document.querySelector('.mp3');
+            var audio = document.getElementById('lobsta');
+
+            function playAudio() {
+                audio.currentTime = 0;
+                audio.volume = 0.5 
+                audio.play();
+            }
+            function stopAudio() {
+                audio.currentTime = 0;
+                audio.pause();
+            }
+
+            button.addEventListener('mouseenter', playAudio);
+            button.addEventListener('mouseleave', stopAudio)
+        });
+    </script>
 
     <main class="background">
         <div></div>
@@ -70,7 +90,7 @@
         </div>
 
         <div class="textDiv">
-            <img src="blue-lobsta.jpg" alt="Lobsta">
+            <img src="blue-lobsta.jpg" alt="Lobsta" class="mp3">
             <div>
                 <h1><span style="color: darkred;">!</span>Nyereményjáték<span style="color: darkred;">!</span></h1>
                 <h2>
