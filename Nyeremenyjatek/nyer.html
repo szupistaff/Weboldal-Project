@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="../header/header_style.css">
+    <link rel="stylesheet" href="nyer.css">
+    <audio id="lobsta">
+        <source src="Blue lobster meme.mp3" type="audio/mp3">
+    </audio>
+
+    <title>Header</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="../header/src/logo.png" alt="logo" title="Pöttyös Patikárium">
+            <h1>Pöttyös Patikárium<br><small>Kisállatkereskedés</small></h1>
+            <img src="../header/src/osszes.png">
+        </div>
+    </header>
+    <div id="nav">
+        <input type="checkbox" value="1">
+        <div id="kezdolap"><a href="../index/index.html">Kezdőlap</a></div>
+        <div id="felelos"><a href="../felelosallattartas/index.html">Felelős állattartás</a></div>
+        <div id="allataink"><a href="../allatok/allatok.html">Állataink</a></div>
+        <div id="nyeremeny"><a href="../Nyeremenyjatek/nyer.html">Nyereményjáték</a></div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var button = document.querySelector('.mp3');
+            var audio = document.getElementById('lobsta');
+
+            function playAudio() {
+                audio.currentTime = 0;
+                audio.volume = 0.5 
+                audio.play();
+            }
+            function stopAudio() {
+                audio.currentTime = 0;
+                audio.pause();
+            }
+
+            button.addEventListener('mouseenter', playAudio);
+            button.addEventListener('mouseleave', stopAudio)
+        });
+    </script>
+
+    <main class="background">
+        <div></div>
+        <div class="formDiv">
+            <div>
+                <div class="BDiv">
+                        <form>
+                            <input id="username" type="text" required>
+                            <label for="username">Írja be a nevét</label>
+                        </form>
+                    <div class="shapetriangle"></div>
+                </div>
+            </div>
+            <div>
+                <div class="BDiv">
+                        <form>
+                            <input id="gmail" type="text" required>
+                            <label for="gmail">Írja be gmail-jét</label>
+                        </form>
+                    <div class="shapetriangle"></div>
+                </div>
+            </div>
+            <div>
+                <div class="BDiv">
+                        <form>
+                            <input id="address" type="text" required>
+                            <label for="address">Írja be lakhelyét</label>
+                        </form>
+                    <div class="shapetriangle"></div>
+                </div>
+            </div>
+            <div>
+                <div class="BDiv">
+                        <form>
+                            <input id="submit" type="submit" required>
+                            <label for="submit">Beküldés</label>
+                        </form>
+                    <div class="shapetriangle"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="textDiv">
+            <img src="blue-lobsta.jpg" alt="Lobsta" class="mp3">
+            <div>
+                <h1><span style="color: darkred;">!</span>Nyereményjáték<span style="color: darkred;">!</span></h1>
+                <h2>
+                    A nyertes egy rirtka <span style="color: blue;">kék</span> homárt kap!
+                </h2>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <ul>
+            <li><img src="../header/src/facebook.png"><a href="https://www.facebook.com/pottyospatikarum">Facebook</a></li>
+            <li><img src="../header/src/instagram.png"><a href="https://www.instagram.com/pottyospatikarum">Instagram</a></li>
+            <li><img src="../header/src/youtube.png"><a href="https://www.youtube.com/pottyospatikarum">Youtube</a></li>
+            <li><img src="../header/src/wordpress.png"><a href="https://pottyospatikarum.wordpress.com/">Blog</a></li>
+            <li><img src="../header/src/mail.png"><a href="mailto:pottyospatikarum@gmail.com">pottyospatikarum@gmail.com</a></li>
+            <li><img src="../header/src/phone.png"><a>+36 01 123 4567</a></li>
+        </ul>
+        <span>Pöttyös Patikárium Kisállatkereskedés © 2024<br><br>Minden jog fenntartva!</span>
+    </footer>
+
+
+</body>
+</html>

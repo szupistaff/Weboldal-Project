@@ -1,0 +1,155 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kezdőlap</title>
+    <link rel="stylesheet" href="../header/header_style.css">
+    <link rel="stylesheet" href="../index/index_style.css">
+    <link rel="stylesheet" href="../index/bootstrap.min.css">
+    <audio id="chipi">
+        <source src="img/chipii.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="hellnaw">
+        <source src="img/hellnaw.mp3" type="audio/mpeg" id="hellnaw">
+        Your browser does not support the audio element.
+    </audio>
+    <style>
+        .kep {
+            width: 100%;
+            aspect-ratio: 3/2;
+            border-radius: 1em;
+        }
+
+        .mkep {
+            width: 100%;
+            aspect-ratio: 3/2;
+            border-radius: 1em;
+        }
+
+        .kep:hover {
+            content: url(img/pdog.gif);
+            transition: 0.2s;
+            width: 100%;
+            aspect-ratio: 3/2;
+            border-radius: 1em;
+        }
+
+        .mkep:hover {
+            content: url(img/chipi.gif);
+            width: 100%;
+            aspect-ratio: 3/2;
+            border-radius: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var image = document.querySelector('.kep');
+            var image2 = document.querySelector('.mkep');
+            var audio = document.getElementById('chipi');
+            var audio2 = document.getElementById('hellnaw')
+
+            function playAudio() {
+                audio.currentTime = 0;
+                audio.volume = 0.5
+                audio.play();
+            }
+            function stopAudio() {
+                audio.currentTime = 0;
+                audio.pause();
+            }
+            function playAudio2() {
+                audio2.currentTime = 0;
+                audio2.volume = 0.5
+                audio2.play();
+            }
+            function stopAudio2() {
+                audio2.currentTime = 0;
+                audio2.pause();
+            }
+            image.addEventListener('mouseenter', playAudio2);
+            image.addEventListener('mouseleave', stopAudio2);
+            image2.addEventListener('mouseenter', playAudio);
+            image2.addEventListener('mouseleave', stopAudio)
+
+        });
+    </script>
+    <header>
+        <div>
+            <img src="../header/src/logo.png" alt="logo" title="Pöttyös Patikárium">
+            <h1>Pöttyös Patikárium<br><small>Kisállatkereskedés</small></h1>
+            <img src="../header/src/osszes.png">
+        </div>
+    </header>
+    <div id="nav">
+        <input type="checkbox" value="1">
+        <div id="kezdolap"><a href="../index/index.html">Kezdőlap</a></div>
+        <div id="felelos"><a href="../felelosallattartas/index.html">Felelős állattartás</a></div>
+        <div id="allataink"><a href="../allatok/allatok.html">Állataink</a></div>
+        <div id="nyeremeny"><a href="../Nyeremenyjatek/nyer.html">Nyereményjáték</a></div>
+    </div>
+
+    <main class="row">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 p-5">
+            <h1><b>Üdvözöljük a Pöttyös Patikárium weboldalán!</b></h1>
+            <p>Immár 1999 óta szolgáljuk ki hűséges vásárlóinkat
+                Magyarország különböző
+                részein, hiszen
+                nemzetközileg elismert állatkereskedésünk több mint tíz különböző helyszínen található az országban.
+                Az
+                évek során
+                szilárd alapot teremtettünk a szakértelem és az állatbarát szolgáltatás terén, hogy mindenki számára
+                biztosítsuk az
+                optimális állatháztartási élményt.<br>
+                <br>
+                Az üzletünkben széles választékban kínálunk mindenféle kedvencet, legyen az kutyus, cica, kisemlős,
+                madár vagy hüllő.
+                Kiemelt figyelmet fordítunk arra, hogy állataink egészségesek és gondoskodó környezetben
+                nevelkedjenek,
+                így biztosak
+                lehetnek abban, hogy tőlünk csak a legjobbat kapják.
+            </p>
+        </div>
+        <div
+            class="col-xs-12 col-sm-12 col-md-4 col-lg-4 p-5 d-flex flex-column gap-5 justify-content-evenly align-items-center">
+            <img src="img/gugya.jpg" alt="gugya" class="kep">
+            <img src="img/macsga.jpg" alt="macsga" class="mkep">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 d-flex p-5 align-items-center">
+            <p>Kínálatunkban megtalálhatók az exotikus ritkaságoktól kezdve egészen a hagyományos kedvencekig mindenféle
+                állatfajta.
+                Szakértő kollégáink mindig rendelkezésre állnak, hogy segítsenek kiválasztani az Ön számára
+                legmegfelelőbb társat, és
+                minden kérdésre választ adjanak az állattartással kapcsolatosan.<br>
+                <br>
+                Legyen szó egy új kiskutyáról vagy macskáról, vagy akár egy egzotikus hüllőről, nálunk mindent megtalál,
+                hogy az Ön és
+                az új kedvence boldog és kiegyensúlyozott életet élhessen. Köszönjük, hogy a Zöld Állatkertet
+                választotta!
+
+            </p>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li><img src="../header/src/facebook.png"><a href="https://www.facebook.com/pottyospatikarium">Facebook</a>
+            </li>
+            <li><img src="../header/src/instagram.png"><a
+                    href="https://www.instagram.com/pottyospatikarium">Instagram</a>
+            </li>
+            <li><img src="../header/src/youtube.png"><a href="https://www.youtube.com/pottyospatikarium">Youtube</a>
+            </li>
+            <li><img src="../header/src/wordpress.png"><a href="https://pottyospatikarium.wordpress.com/">Blog</a></li>
+            <li><img src="../header/src/mail.png"><a
+                    href="mailto:pottyospatikarium@gmail.com">pottyospatikarum@gmail.com</a></li>
+            <li><img src="../header/src/phone.png"><a>+36 01 123 4567</a></li>
+        </ul>
+        <span>Pöttyös Patikárium Kisállatkereskedés © 2024<br><br>Minden jog fenntartva!</span>
+    </footer>
+</body>
+
+</html>
