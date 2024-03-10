@@ -15,6 +15,7 @@
 *{
     margin: 0 !important;
     padding: 0 !important;
+    image-rendering: optimizeSpeed;
 }
 
 main{
@@ -173,15 +174,14 @@ main{
                 font-size: var(--font-m);
                 background-color: var(--color4);
                 letter-spacing: 2vw;
-                font-family: Tahoma;
-                font-weight: bold;
+                font-family: cursive;
+                font-weight: bolder;
                 color: var(--color0);
                 display: flex;
                 align-items: center;
                 gap: 2vw;
                 overflow: hidden;
                 text-wrap: nowrap;
-                font-style: italic;
 
                 > span{
                     animation-name: akcio;
@@ -209,7 +209,7 @@ main{
                     flex-basis: 60%;
                     flex-grow: 1;
                     font-size: var(--font-s);
-                    font-family: Cambria;
+                    font-family: cursive;
                     color: var(--color1);
                     padding: 1em !important;
 
@@ -225,7 +225,7 @@ main{
 
                     > span:nth-child(5){
                         font-weight: bold;
-                        color: var(--color0);
+                        color: var(--color4);
                     }
 
                     > span:nth-child(7){
