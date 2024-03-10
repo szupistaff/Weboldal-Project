@@ -239,6 +239,10 @@ main{
                     display: block;
                     width: 30%;
                     min-width: 10em;
+
+                    &:hover{
+                        content: url("../allatok/src/dog.gif");
+                    }
                 }
             }
         }
@@ -255,9 +259,24 @@ main{
     }
 }
 
-#kutya > section{
+:is(#kutya, #macska) > section{
     background-image: url(../allatok/src/mancs.jpg);
     background-size: 15%;
+}
+
+#hullo > section{
+    background-image: url(../allatok/src/hullohatter.jpg);
+    background-size: 15%;
+}
+
+#madar > section{
+    background-image: url(../allatok/src/madarhatter.jpg);
+    background-size: 15%;
+}
+
+#kisemlos > section{
+    background-image: url(../allatok/src/emloshatter.jpg);
+    background-size: 12%;
 }
 
 
