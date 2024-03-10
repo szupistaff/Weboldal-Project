@@ -7,9 +7,61 @@
     <link rel="stylesheet" href="../header/header_style.css">
     <link rel="stylesheet" href="../index/index_style.css">
     <link rel="stylesheet" href="../index/bootstrap.min.css">
+    <audio id="chipi">
+        <source src="img/chipii.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <style>
+        .kep {
+            width: 100%;
+            aspect-ratio: 3/2;
+            border-radius: 1em;
+        }
+
+        .mkep {
+            width: 100%;
+            aspect-ratio: 3/2;
+            border-radius: 1em;
+        }
+
+        .kep:hover {
+            content: url(img/pdog.gif);
+            transition: 0.2s;
+            width: 100%;
+            aspect-ratio: 3/2;
+            border-radius: 1em;
+        }
+
+        .mkep:hover {
+            content: url(img/chipi.gif);
+            width: 100%;
+            aspect-ratio: 3/2;
+            border-radius: 1em;
+        }
+    </style>
 </head>
 
 <body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var button = document.querySelector('.mkep');
+            var audio = document.getElementById('chipi');
+
+            // Function to play audio
+            function playAudio() {
+                audio.currentTime = 0;
+                audio.volume = 0.5 // Reset audio to the beginning
+                audio.play();
+            }
+            function stopAudio() {
+                audio.currentTime = 0;
+                audio.pause();
+            }
+
+            button.addEventListener('mouseenter', playAudio);
+            button.addEventListener('mouseleave', stopAudio)
+        });
+    </script>
     <header>
         <div>
             <img src="../header/src/logo.png" alt="logo" title="Pöttyös Patikárium">

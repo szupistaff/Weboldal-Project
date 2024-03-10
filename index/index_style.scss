@@ -30,29 +30,6 @@ h1 {
     text-align: center;
     letter-spacing: 0.3vw;
 }
-.kep {
-    width: 100%;
-    aspect-ratio: 3/2;
-    border-radius: 1em;
-}
-.mkep {
-    width: 100%;
-    aspect-ratio: 3/2;
-    border-radius: 1em;
-}
-.kep:hover{
-    content: url(img/pdog.gif);
-    transition: 0.2s;
-    width: 100%;
-    aspect-ratio: 3/2;
-    border-radius: 1em;
-}
-.mkep:hover {
-    content: url(img/chipi.gif);
-    width: 100%;
-    aspect-ratio: 3/2;
-    border-radius: 1em;
-}
 @media screen and (width<=768px) {
     .kep {
             width: 60%;
