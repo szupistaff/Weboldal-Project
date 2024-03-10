@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="../header/header_style.css">
     <link rel="stylesheet" href="nyer.css">
-    <link rel="stylesheet" href="bootstrap.min.css">
+    
 
     <title>Header</title>
 </head>
 <body>
     <header>
         <div>
-            <img src="../header/logo.png" alt="logo" title="Pöttyös Patikárium">
+            <img src="../header/src/logo.png" alt="logo" title="Pöttyös Patikárium">
             <h1>Pöttyös Patikárium<br><small>Kisállatkereskedés</small></h1>
-            <img src="../header/mancs.png" alt="mancs">
+            <img src="../header/src/osszes.png">
         </div>
     </header>
     <div id="nav">
@@ -25,7 +26,10 @@
         <div id="nyeremeny"><a href="#d">Nyereményjáték</a></div>
     </div>
 
+    
+
     <main class="background">
+        <div></div>
         <div class="formDiv">
             <div>
                 <div class="BDiv">
@@ -58,15 +62,35 @@
                 <div class="BDiv">
                         <form>
                             <input id="submit" type="submit" required>
-                            <label for="submit">Beküldés</label>   
+                            <label for="submit">Beküldés</label>
                         </form>
                     <div class="shapetriangle"></div>
                 </div>
             </div>
         </div>
+
+        <div class="textDiv">
+            <img src="blue-lobsta.jpg" alt="Lobsta">
+            <div>
+                <h1><span style="color: darkred;">!</span>Nyereményjáték<span style="color: darkred;">!</span></h1>
+                <h2>
+                    A nyertes egy rirtka <span style="color: blue;">kék</span> homárt kap!
+                </h2>
+            </div>
+        </div>
     </main>
 
-    <!-- Innentől kezdve csak a teszteléshez van tartalom -->
+    <footer>
+        <ul>
+            <li><img src="../header/src/facebook.png"><a href="https://www.facebook.com/pottyospatikarum">Facebook</a></li>
+            <li><img src="../header/src/instagram.png"><a href="https://www.instagram.com/pottyospatikarum">Instagram</a></li>
+            <li><img src="../header/src/youtube.png"><a href="https://www.youtube.com/pottyospatikarum">Youtube</a></li>
+            <li><img src="../header/src/wordpress.png"><a href="https://pottyospatikarum.wordpress.com/">Blog</a></li>
+            <li><img src="../header/src/mail.png"><a href="mailto:pottyospatikarum@gmail.com">pottyospatikarum@gmail.com</a></li>
+            <li><img src="../header/src/phone.png"><a>+36 01 123 4567</a></li>
+        </ul>
+        <span>Pöttyös Patikárium Kisállatkereskedés © 2024<br><br>Minden jog fenntartva!</span>
+    </footer>
 
 
 </body>

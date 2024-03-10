@@ -20,19 +20,47 @@
 }
 
 .formDiv {
-    width: 60%;
+    flex-basis: 60%;
 }
 
 .textDiv {
-    width: 40%;
+    flex-basis: 40%;
 }
+
+
+
+.textDiv>img {
+    width: 90%;
+    height: 35%;
+    border-radius: 7px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.textDiv>div>h1 {
+    color: rgb(36, 35, 35);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.textDiv>div>h2 {
+    color: rgb(36, 35, 35);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
 .BDiv{
     z-index: 1;
     background-color: rgba(165, 161, 145, 0.849);
-    width: 550px;
+    width: 82%;
     height: 100px;
     margin-top: 20px;
-    transform: translateX(-550px);
+    transform: translateX(-100%);
     justify-content: space-between;
     display: flex;
     align-items: center;
@@ -40,35 +68,34 @@
 
 .BDiv>form>input {
     z-index: 1;
-    height: 60px;
-    width: 250px;
+    height: 50px;
+    width: 90%;
     position: relative;
-    left: 150px;
+    left: 50px;
     appearance: none;
     outline: none;
     font-size: 1.2em;
-    line-height: 20px;
     border-radius: 5px;
     border: 2px solid darkgreen;
-
 }
 .BDiv>form>label {
     z-index: 1;
     position: relative;
-    left: 150px;
+    left: 108px;
     color: black;
     font-size: 1.1em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .BDiv:hover {
-    transform: translateX(0px);
+    transform: translateX(0);
     cursor: pointer;
 }
 
 main {
     z-index: 1;
     display: flex !important;
+    flex-wrap:wrap-reverse;
     background-color: #b9c9a5;
 }
 
