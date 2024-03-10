@@ -11,6 +11,10 @@
     --font-xs: clamp(0.25rem, 1vw, 1rem);
     --p-font: "Montserrat", sans-serif;
 }
+html, body{
+    overflow-x: hidden;
+}
+
 main {
     background-image: url(img/hatter.jpg);
     background-size: cover;
